@@ -38,4 +38,47 @@ Command:\
 kubectl api-resources --namespaced=false\
 \
 Provides list of all components which are not part of any namespace.\
+\
+Command:\
+kubectl apply -f mysql-configmap.yaml\
+\
+Create a configmap at default namespace\
+\
+Command;\
+Kubectl get configmap\
+\
+Provides a list of configmaps\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 Command;\
+Kubectl get configmap -n <namespace> \
+\
+Gets configmaps for particular namespace\
+\
+\
+Command:\
+kubectl apply -f mysql-configmap.yaml \'97namespace=my-namespace\
+\
+Creates a configmap at particular namespace.\
+\
+If u want to avoid the above scenarios of mentioning namespace everytime, you can install\
+\
+Brew install kubectx\
+\
+command:\
+Kubens\
+\
+Provides a list of namespace and highlights the selected namespace\
+\
+command:\
+kubens <namespace>\
+\
+This helps in selecting the namespace for current context.\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\
 }
